@@ -6,9 +6,26 @@
 	justify-content: space-evenly;
 	padding: 20px;
 }
+.app__header > h1 {
+	color: rgb(247, 0, 0);
+}
+.app__left {
+	flex: 0.9;
+}
 
-.app__left{
-  flex: 0.9;
+.app__graph > h3 {
+	margin-top: 60px;
+	margin-bottom: 25px;
+	color: rgb(73, 73, 73);
+}
+.app__table {
+	margin-top: 20px;
+}
+.app__table > h3 {
+	color: rgb(73, 73, 73);
+}
+.app__dropdown {
+	background-color: white;
 }
 
 @media (max-width: 990px) {

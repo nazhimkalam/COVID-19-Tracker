@@ -1,8 +1,9 @@
 import React from 'react';
 import { Map as LeafletMap, TileLayer } from 'react-leaflet';
 import './Map.css';
+import { showDataOnMap } from './util';
 
-function Map({ countries, center, zoom }) {
+function Map({ countries, casesType, center, zoom }) {
 	return (
 		<div className="map">
 			<LeafletMap center={center} zoom={zoom}>
@@ -12,6 +13,7 @@ function Map({ countries, center, zoom }) {
 				/>
 
 				{/* drawing the circles on the countries */}
+				{showDataOnMap(countries, casesType)}
 			</LeafletMap>
 		</div>
 	);
