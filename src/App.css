@@ -8,11 +8,64 @@
 }
 .app__header > h1 {
 	color: rgb(247, 0, 0);
+
+	/* adding animation */
+	animation: header-load 300ms ease-in 100ms;
+	animation-fill-mode: forwards;
+	transform: translateY(-20px);
+	opacity: 0;
 }
+
+@keyframes header-load {
+	0% {
+		transform: translateY(-20px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+
 .app__left {
 	flex: 0.9;
 }
+.app__rightCard {
+	/* adding animation */
+	animation: rightCard-load 300ms ease-in 200ms;
+	animation-fill-mode: forwards;
+	transform: translateY(-20px);
+	opacity: 0;
+}
+@keyframes rightCard-load {
+	0% {
+		transform: translateY(-20px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
 
+.app__graph {
+	/* adding animation */
+	animation: graph-load 300ms ease-in 600ms;
+	animation-fill-mode: forwards;
+	transform: translateY(-20px);
+	opacity: 0;
+}
+
+@keyframes graph-load {
+	0% {
+		transform: translateY(-20px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
 .app__graph > h3 {
 	margin-top: 60px;
 	margin-bottom: 25px;
@@ -20,14 +73,39 @@
 }
 .app__table {
 	margin-top: 20px;
+
+	/* adding animation */
+	animation: table-load 300ms ease-in 400ms;
+	animation-fill-mode: forwards;
+	transform: translateY(-20px);
+	opacity: 0;
 }
+
+@keyframes table-load {
+	0% {
+		transform: translateY(-20px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+
 .app__table > h3 {
 	color: rgb(73, 73, 73);
 }
+
 .app__dropdown {
 	background-color: white;
+
+	animation: header-load 300ms ease-in 100ms;
+	animation-fill-mode: forwards;
+	transform: translateY(-20px);
+	opacity: 0;
 }
 
+/* changes the flex below 990px */
 @media (max-width: 990px) {
 	.app {
 		flex-direction: column;
@@ -43,7 +121,24 @@
 .app__stats {
 	display: flex;
 	justify-content: space-between;
+
+	animation: infoBox-load 300ms ease-in 400ms;
+	animation-fill-mode: forwards;
+	transform: translateY(-20px);
+	opacity: 0;
 }
+
+@keyframes infoBox-load {
+	0% {
+		transform: translateY(-20px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+
 body {
 	background-color: whitesmoke;
 }

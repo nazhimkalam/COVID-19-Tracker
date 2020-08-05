@@ -5,6 +5,23 @@
 	border-radius: 20px;
 	margin-top: 16px;
 	box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.5);
+
+	/* adding animation for the map */
+	animation: map-load 300ms ease-in 600ms;
+	animation-fill-mode: forwards;
+	transform: translateY(-20px);
+	opacity: 0;
+}
+
+@keyframes map-load {
+	0% {
+		transform: translateY(-20px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
 }
 
 .map .leaflet-container {

@@ -112,10 +112,9 @@ function App() {
 				</div>
 
 				<Map casesType={casesType} center={mapCenter} zoom={mapZoom} countries={mapCountries} />
-				{/* Map */}
 			</div>
 
-			<Card>
+			<Card className = "app__rightCard">
 				<CardContent>
 					<div className="app__right">
 						<div className="app__table">
