@@ -11,6 +11,8 @@
 ## You should have a file with the following node modules in order to create this application:
 
 **1. Default node packages which comes when you create a new react project**
+            
+            npm install
 
 **2. firebase tools (run in terminal, "npm install -g firebase-tools") and sudo before npm for MAC users**
 
@@ -44,6 +46,13 @@
            npm run build
            firebase deploy
 
-## Click [here](https://covid-19-tracker-656bf.web.app) to checkout the application.
+---
+### In order to run the application in development mode run,
+        npm start
+        
+### Runs the app in the development mode.
+### Open http://localhost:3000 to view it in the browser.
+### The page will reload if you make edits.
+### You will also see any lint errors in the console.
 
 👍🔥💻
