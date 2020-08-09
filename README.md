@@ -47,7 +47,7 @@
            firebase deploy
 
 ---
-### In order to run the application in development mode run,
+# In order to run the application in development mode run,
         npm start
         
 ### Runs the app in the development mode.
